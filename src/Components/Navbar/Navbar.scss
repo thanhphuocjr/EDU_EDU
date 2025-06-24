@@ -1,0 +1,48 @@
+.navbar {
+  font-weight: 650;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 10px 10%;
+  color: white;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  z-index: 10;
+  transition: 0.5s;
+
+  &.hidden {
+    transform: translateY(-100%);
+  }
+  &.visible {
+    transform: translateY(0);
+  }
+  &.scrolled {
+    background-color: #212ea0;
+  }
+  .logo {
+    width: 40%;
+    img {
+      width: 200px;
+      display: block;
+    }
+  }
+  .content {
+    width: 60%;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      list-style: none;
+      li {
+        margin-left: 20px;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+}
