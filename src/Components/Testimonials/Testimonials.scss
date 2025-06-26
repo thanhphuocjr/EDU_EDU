@@ -31,7 +31,7 @@
       display: flex;
       width: 200%;
       overflow-x: hidden;
-      transition: 0.5s;
+      transition: 0.7s;
 
       li {
         list-style: none;
@@ -56,11 +56,11 @@
               color: #212ea0;
               font-weight: 650;
             }
-            span{
-                font-weight: 500;
+            span {
+              font-weight: 500;
             }
           }
-          p{
+          p {
             max-width: 95%;
           }
         }
