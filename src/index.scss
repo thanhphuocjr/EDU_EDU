@@ -36,7 +36,7 @@ a {
   font-weight: 600;
 
   &:hover {
-    background-color: #ddd;
+    background-color: rgb(125, 121, 125);
     color: black;
   }
 
@@ -51,9 +51,9 @@ a {
 }
 .white_mode {
   color: white;
-  background-color: #242e9a;
+  background-color: #dddd;
 }
 .dark_mode {
-  background-color: #ddd;
-  color: black;
+  background-color: #242e9a;
+  color: white;
 }
