@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 // import "./Navbar.css";
 import "./Navbar.scss";
 import logo from "../../assets/logo.png";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -30,6 +31,10 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleOnclick = () => {
+    setTimeout(() => setShowNavbar(true), 550);
+  };
+
   return (
     <div
       className={`navbar ${showNavbar ? "visible" : "hidden"} ${
@@ -42,22 +47,72 @@ const Navbar = () => {
       <div className="content">
         <ul>
           <li>
-            <a href="#">Home</a>
+            <Link
+              to="hero"
+              smooth={true}
+              offset={0}
+              duration={500}
+              onClick={handleOnclick}
+            >
+              Home
+            </Link>
           </li>
           <li>
-            <a href="#">Program</a>
+            <Link
+              to="program"
+              smooth={true}
+              offset={-200}
+              duration={500}
+              onClick={handleOnclick}
+            >
+              Program
+            </Link>
           </li>
           <li>
-            <a href="#">About us</a>
+            <Link
+              to="about"
+              smooth={true}
+              offset={-120}
+              duration={500}
+              onClick={handleOnclick}
+            >
+              About us
+            </Link>
           </li>
           <li>
-            <a href="#">Campus</a>
+            <Link
+              to="campus"
+              smooth={true}
+              offset={-270}
+              duration={500}
+              onClick={handleOnclick}
+            >
+              Campus
+            </Link>
           </li>
           <li>
-            <a href="#">Testimonials</a>
+            <Link
+              to="testimonials"
+              smooth={true}
+              offset={-300}
+              duration={500}
+              onClick={handleOnclick}
+            >
+              Testimonials
+            </Link>
           </li>
           <li>
-            <button className="btn">Contact us</button>
+            <button className="btn">
+              <Link
+                to="contact"
+                smooth={true}
+                offset={-260}
+                duration={500}
+                onClick={handleOnclick}
+              >
+                Contact us
+              </Link>
+            </button>
           </li>
         </ul>
       </div>
