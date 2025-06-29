@@ -46,10 +46,21 @@ a {
   }
 }
 .white_mode {
-  color: white;
-  background-color: #242e9a;
+  color: black;
+  background-color: white;
 }
 .dark_mode {
   background-color: #242e9a;
   color: white;
+}
+
+// Media query
+@media (max-width: 1200px) {
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .btn {
+    padding: 14px 20px;
+  }
 }

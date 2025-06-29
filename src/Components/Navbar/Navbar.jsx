@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import "./Navbar.scss";
 import logo from "../../assets/logo.png";
 import { Link } from "react-scroll";
+import menu_icon from "../../assets/menu-icon.png"
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -115,6 +116,7 @@ const Navbar = () => {
             </button>
           </li>
         </ul>
+        <img src={menu_icon} alt="" className="menu-icon" />
       </div>
     </div>
   );
