@@ -94,7 +94,7 @@ const Navbar = () => {
             <Link
               to="testimonials"
               smooth={true}
-              offset={-300}
+              offset={-280}
               duration={500}
               onClick={handleOnclick}
             >
@@ -102,7 +102,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <button className="btn">
+            <button className="btn white_mode">
               <Link
                 to="contact"
                 smooth={true}
