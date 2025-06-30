@@ -49,3 +49,19 @@
     }
   }
 }
+
+// Media query
+@media (max-width: 768px) {
+  .programs{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    .program{
+      width: 100%;
+    }
+  }
+  
+}
+
+

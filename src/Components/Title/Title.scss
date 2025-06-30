@@ -14,3 +14,15 @@
     font-size: 40px;
   }
 }
+
+@media (max-width: 480px) {
+ .container{
+  .sub_title{
+    font-size: 14px;
+  }
+  .title{
+    font-size: 27px;
+  }
+ }
+  
+}
