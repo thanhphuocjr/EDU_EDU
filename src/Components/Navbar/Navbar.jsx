@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import "./Navbar.scss";
 import logo from "../../assets/logo.png";
 import { Link } from "react-scroll";
-import menu_icon from "../../assets/menu-icon.png"
+import menu_icon from "../../assets/menu-icon.png";
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -103,17 +103,15 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <button className="btn white_mode">
-              <Link
-                to="contact"
-                smooth={true}
-                offset={-260}
-                duration={500}
-                onClick={handleOnclick}
-              >
-                Contact us
-              </Link>
-            </button>
+            <Link
+              to="contact"
+              smooth={true}
+              offset={-280}
+              duration={500}
+              onClick={handleOnclick}
+            >
+              <button className="btn white_mode">Contact us</button>
+            </Link>
           </li>
         </ul>
         <img src={menu_icon} alt="" className="menu-icon" />
