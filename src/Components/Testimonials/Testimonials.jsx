@@ -32,7 +32,7 @@ const Testimonial = () => {
         onClick={slideForward}
       />
       <img
-        src={back_icon}
+        src={back_icon} 
         alt=""
         className="back-button"
         onClick={slideBackward}
