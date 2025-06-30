@@ -7,7 +7,7 @@ const Hero = () => {
     <div className="hero">
       <div className="hero-text">
         <h1>
-          We Ensure better education
+          We ensure better education
           <br />
           for a better world
         </h1>

@@ -32,3 +32,26 @@
     }
   }
 }
+
+// Media query
+@media (max-width: 768px) {
+  .hero {
+    &-text {
+      h1{
+       font-size: 35px;
+      }
+      p {
+        width: 80%;
+        font-size: 14px;
+      }
+
+      .btn {
+        padding: 10px 10px;
+        font-size: 15px;
+        img {
+          width: 12px;
+        }
+      }
+    }
+  }
+}
