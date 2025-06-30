@@ -12,6 +12,33 @@
       border-radius: 10px;
     }
   }
-  .btn{
+  .btn {
+    border: 1px solid rgb(72, 68, 68);
+  }
+}
+
+@media (max-width: 768px) {
+  .campus {
+    .gallery {
+      flex-wrap: wrap;
+      img {
+        width: 48%;
+        margin-bottom: 20px;
+      }
+    }
+    .btn{
+      font-size: 13px;
+      padding: 10px 5px;
+
+    }
+  }
+}
+@media (max-width: 480px) {
+  .campus {
+    .gallery {
+      img {
+        width: 100%;
+      }
+    }
   }
 }

@@ -5,7 +5,7 @@ import gallery_3 from "../../assets/gallery-3.png";
 import gallery_4 from "../../assets/gallery-4.png";
 import "./Campus.scss";
 const Campus = () => {
-  return (
+  return ( 
     <div className="campus">
       <div className="gallery">
         <img src={gallery_1} alt="" />
