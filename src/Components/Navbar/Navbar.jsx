@@ -8,6 +8,10 @@ import menu_icon from "../../assets/menu-icon.png";
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
   const [scrolled, setScrolled] = useState(false);
+  const [mobileMenu, setMobileMenu] = useState(false);
+  const toggleMenu = () => {
+    setMobileMenu(!mobileMenu);
+  };
   // const [lastScrollY, setLastScrollY] = useState(0);
   useEffect(() => {
     let lastY = window.scrollY;
@@ -46,7 +50,7 @@ const Navbar = () => {
         <img src={logo} alt="logo" className="logo" />
       </div>
       <div className="content">
-        <ul>
+        <ul className={mobileMenu ? "" : "hide-mobile-menu"}>
           <li>
             <Link
               to="hero"
@@ -114,7 +118,12 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <img src={menu_icon} alt="" className="menu-icon" />
+        <img
+          src={menu_icon}
+          alt=""
+          className="menu-icon"
+          onClick={toggleMenu}
+        />
       </div>
     </div>
   );

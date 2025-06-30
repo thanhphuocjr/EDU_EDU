@@ -1,3 +1,6 @@
+
+// 480.768,992,1200,1440
+
 .navbar {
   font-weight: 650;
   position: fixed;
@@ -109,7 +112,9 @@
         transform: translateY(-50%);
         right: 100px;
         transform: translateX(50%);
-        margin-bottom: 20px;
+      }
+      .hide-mobile-menu{
+        right: -200px;
       }
     }
   }
