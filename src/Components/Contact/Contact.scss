@@ -53,6 +53,12 @@
         margin-top: 5px;
         resize: none;
       }
+      button {
+        font-size: 14px;
+        img {
+          width: 20px;
+        }
+      }
     }
   }
 }
@@ -72,5 +78,29 @@
   &hidden {
     opacity: 0;
     transition: opacity 0.5s ease;
+  }
+}
+
+// Media Query
+@media (max-width: 768px) {
+  .contact {
+    display: block;
+    .contact-col {
+      padding-bottom: 20px;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .contact {
+    .contact-col {
+      form {
+        button {
+          font-size: 12px;
+          img {
+            width: 13px;
+          }
+        }
+      }
+    }
   }
 }
