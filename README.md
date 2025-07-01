@@ -5,7 +5,9 @@
 Welcome to the EDU-EDU website, a modern educational platform built with React.js. This project showcases a university or educational institution's offerings, including programs, campus tours, testimonials, contact information, and more. The website is designed to be responsive, user-friendly, and visually appealing, with features like a video player, image galleries, and a contact form.
 
 - **Live Date**: July 01, 2025
-- **Developed by**: [Nguyen Thanh Phuoc]
+- **Live Preview**: [https://edu-edu.vercel.app/](https://edu-edu.vercel.app/)
+- **Developed by**: [Your Name or Team Name]
+- **Last Updated**: 01:44 PM +07, Tuesday, July 01, 2025
 - **Purpose**: To provide an engaging online presence for educational institutions.
 
 ## Features
