@@ -2,12 +2,20 @@ import React from "react";
 import "./About.scss";
 import about_img from "../../assets/about.png";
 import play_icon from "../../assets/play-icon.png";
-const About = () => {
+const About = ({setPlayState}) => {
+  const handleClickPlay = () => {
+    setPlayState(true);
+  };
   return (
     <div className="about">
       <div className="about-left">
         <img src={about_img} alt="" className="about-img" />
-        <img src={play_icon} alt="" className="play_icon-img" />
+        <img
+          src={play_icon}
+          alt=""
+          className="play_icon-img"
+          onClick={handleClickPlay}
+        />
       </div>
       <div className="about-right">
         <div className="header">

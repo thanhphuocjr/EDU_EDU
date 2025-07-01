@@ -1,12 +1,23 @@
-import React from 'react'
-import "./VideoPlayer.scss"
-import video from '../../assets/video-college.mp4'
-const VideoPlayer = () => {
-  return (
-   <div className="video-player">
-    <video src={video} autoPlay muted controls></video>
-   </div>
-  )
-}
+import React, { useRef } from "react";
+import "./VideoPlayer.scss";
+import video from "../../assets/video-college.mp4";
+const VideoPlayer = ({ playState, setPlayState }) => {
+  const player = useRef(null);
+  const closePlayer = (e) => {
+    if (e.target === player.current) {
+      setPlayState(false);
+    }
+  };
 
-export default VideoPlayer
+  return (
+    <div
+      className={`video-player ${playState ? "" : "hide"}`}
+      ref={player}
+      onClick={closePlayer}
+    >
+      <video src={video} autoPlay muted controls loop></video>
+    </div>
+  );
+};
+
+export default VideoPlayer;
